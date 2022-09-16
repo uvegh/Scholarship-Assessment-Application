@@ -1,0 +1,118 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+}
+
+.nav {
+  z-index: 1;
+  background: radial-gradient(circle, rgb(40, 33, 161) 1%, rgb(199, 152, 166) 21%, rgb(204, 114, 87) 58%, rgb(0, 255, 136) 82%);
+  background: linear-gradient(to right, #f1a8db, #ecc5f1);
+}
+.nav .nav-link:hover {
+  transition: all 500ms;
+  transform: translateY(-2px);
+  transform: translateX(2px);
+  transition: all 500ms ease-in;
+  box-shadow: 0 5px 10px #514f52;
+  color: white;
+}
+
+.banner {
+  width: 100%;
+  background: rgb(40, 33, 161);
+  background: radial-gradient(circle, rgb(40, 33, 161) 1%, rgb(134, 35, 64) 21%, rgb(204, 114, 87) 58%, rgb(0, 255, 136) 82%);
+  background: linear-gradient(to right, #512845, #87718a);
+}
+
+form p {
+  color: red;
+}
+form .form-control, form .form-select {
+  height: 44px;
+  background-color: #f3eff3;
+}
+form .form-control:hover, form .form-select:hover {
+  background-color: white;
+  transition: all 700ms;
+}
+form span {
+  height: 44px;
+}
+form .button {
+  background-color: #d2acd6;
+}
+form .button:hover, form .button:focus {
+  outline: 0;
+  transform: translateY(-5px);
+  transition: all 500ms ease-in;
+  background-color: #a285a5;
+  box-shadow: 0 5px 10px #625064;
+}
+form .button:active {
+  transform: translateY(-3px);
+}
+
+.modal {
+  transition: all 500ms;
+  /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  /* Location of the box */
+}
+.modal p {
+  font-weight: 600;
+}
+.modal button {
+  width: 40px;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: rgb(240, 229, 229);
+  margin: auto;
+  border: 1px solid #888;
+  width: 80%;
+}
+.modal-content #popupItem {
+  text-align: center;
+  text-transform: capitalize;
+}
+.modal-content button {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  height: 40px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(255, 15, 15);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.row a {
+  font-size: 20px;
+  text-decoration: none;
+  color: whitesmoke;
+}
+.row a:hover {
+  transition: all 500ms;
+  color: rgb(128, 123, 123);
+}
+
+footer {
+  background: linear-gradient(to right, #49203d, #664a69);
+}/*# sourceMappingURL=main.css.map */
