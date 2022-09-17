@@ -84,6 +84,25 @@ function check() {
     }
   }
 
+  (function () {
+    'use strict'
+
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll('.needs-validation')
+
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+        })
+})();
 
 submitBtn.addEventListener("click", function () {
     validateForm()
@@ -401,7 +420,7 @@ function validatePoints() {
     if (points>=180) {
         popupItem.innerHTML=` 
         <p style="color:white;font-size:30px">Scholarship awarded with a total points of  <br> ${points}
-        <canvas class="text-center   chart" id="myChart"></canvas> <br>
+        <canvas class="text-center   chart" id="myChart" height="400"></canvas> <br>
         <button class="btn btn-outline-secondary fw-bold " id="closeBtn">OKAY</button>
         </p>
         `
@@ -413,7 +432,7 @@ function validatePoints() {
     else{
         popupItem.innerHTML=`    
         <p style="color:red;font-size:30px">Request for scholarship has been denied with a total points of ${points}
-        <canvas class="text-center" id="myChart"></canvas> <br>
+        <canvas class="text-center" id="myChart" height="400"></canvas> <br>
         <button class="btn btn-outline-danger fs-5" id="closeBtn">OKAY</button>
 
         </p>`
