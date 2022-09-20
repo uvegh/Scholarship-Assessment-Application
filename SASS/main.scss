@@ -121,5 +121,58 @@ footer{
   background: linear-gradient(to right, #49203d, #664a69); 
 }
 
+.opener{
+
+  .btn{
+background-color: #82add3;
 
 
+
+  }
+}
+
+.editor{display: none;}
+.welcome{background: -webkit-linear-gradient(to right, #accfee, #b3cfe7); 
+  background: linear-gradient(to right, #f0b2dd, #eddef0);
+  .button{
+    background-color: #d2acd6;
+    &:hover, &:focus {
+      outline: 0;
+      transform: translateY(-5px);
+      transition: all 500ms ease-in;
+      background-color: #a285a5;
+      box-shadow: 0 5px 10px #625064;
+    }
+    &:active {
+      transform: translateY(-3px);
+    }
+  } }
+.row{
+  .colBg{ 
+    background-color:  #f0b2dd ;
+   
+  
+ img:hover{
+  transition: all 2000ms;
+transform: scale(1.3 );
+ } 
+  }
+    .button{
+      background-color: #d2acd6;
+      &:hover, &:focus {
+        outline: 0;
+        transform: translateY(-5px);
+        transition: all 500ms ease-in;
+        background-color: #a285a5;
+        box-shadow: 0 5px 10px #625064;
+      }
+      &:active {
+        transform: translateY(-3px);
+      }
+    }
+}
+
+ .ck-editor__editable[role="textbox"] {
+  /* editing area */
+  min-height: 300px;
+}
